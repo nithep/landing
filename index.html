@@ -83,9 +83,10 @@ footer{border-top:1px solid var(--stroke);padding:2rem 0 3rem;color:var(--dim);f
 <section id="proof">
 <h2>ตัวอย่างจริง จับต้องได้</h2>
 <p>ไม่ใช่สไลด์ — รันอยู่บน Pi 4 + Cloud จริง</p>
-<div class="grid g2">
+<div class="grid g3">
 <div class="card"><div class="tag">CASE 01 — DONE</div><h3>🔔 Smart Nurse Call (SNC)</h3><p>ปุ่มฉุกเฉิน → PBX พ่น SMDR → Pi แปลง FHIR → Dashboard แดงกะพริบ + เสียง + จับเวลา → พยาบาลกด Ack</p><p style="margin-top:.7rem"><a class="btn pri" style="display:inline-block" href="https://snc.nithep.com">เปิด snc.nithep.com</a> <a class="btn" style="display:inline-block" href="https://snc.nithep.com/docs">/docs</a></p></div>
 <div class="card"><div class="tag">CASE 02 — POC → PILOT</div><h3>🏨 Check-in แล้วใช้มือถือเปิดไฟผ่าน PBX</h3><p>สแกน QR → LINE LIFF Check-in → Cloud สั่ง Pi → CCH2 ON → เสียบคีย์การ์ดไฟติด → สั่งเปิด/ปิดแอร์จากมือถือ ไม่ต้องเปลี่ยนตู้เดิม</p><p style="margin-top:.7rem"><a class="btn" style="display:inline-block" href="https://shc.nithep.com">เปิด shc.nithep.com</a></p></div>
+<div class="card"><div class="tag">CASE 03 — DONE · OPEN SOURCE</div><h3>📹 คืนชีพ CCTV ตกรุ่น (legacy-cctv)</h3><p>NVR NUUO EOL + กล้อง Seetong 2014 ที่ vendor หาย → Pi/Z2W เฝ้า 60s + แจ้ง Telegram + ดึงภาพ/คลิป + YOLO จับคน ไม่ต้องซื้อ NVR ใหม่ ไม่เปิดพอร์ตออกเน็ต</p><p style="margin-top:.7rem"><a class="btn" style="display:inline-block" href="https://github.com/nithep/legacy-cctv">GitHub · MIT ฟรี</a></p></div>
 </div>
 <div class="demo">
 <h3>▶ ลองกดเล่น: จำลอง Check-in → เปิดไฟ (คอนเซปต์เดียวกับของจริง)</h3>
