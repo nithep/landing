@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nithep — Smart Legacy Platform | ทำให้ระบบเก่า ฉลาดขึ้น</title>
+<meta name="description" content="nithep Smart Legacy Platform — เชื่อม Legacy PBX / Software / IoT เป็น Event + API + Dashboard + AI บน Raspberry Pi 4 + Cloud ต้นแบบจริง SNC และ Hotel Check-in เปิดไฟผ่าน PBX จากมือถือ">
+<link rel="canonical" href="https://nithep.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="nithep — Smart Legacy Platform">
+<meta property="og:description" content="Bridge the Past. Power the Future. ตู้ PBX อายุ 20 ปี → Nurse Call เรียลไทม์ / Check-in แล้วเปิดไฟจากมือถือ">
+<meta property="og:url" content="https://nithep.com">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"nithep","url":"https://nithep.com","description":"Smart Legacy Platform — เชื่อม Legacy Hardware/Software/IoT สู่ Smart System ที่วิเคราะห์คาดการณ์ได้","contactPoint":{"@type":"ContactPoint","telephone":"+66819508950","contactType":"customer service","areaServed":"TH","availableLanguage":["Thai","English"]}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg0:#060a13;--bg1:#0b1222;--card:rgba(255,255,255,.045);--stroke:rgba(148,163,184,.16);--text:#f1f5f9;--dim:#94a3b8;--grad:linear-gradient(135deg,#3b82f6,#6366f1 50%,#a855f7);--r:20px;--font:'Prompt',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--text);background:radial-gradient(1000px 500px at 85% -10%,rgba(99,102,241,.15),transparent 60%),linear-gradient(180deg,var(--bg0),var(--bg1));min-height:100vh;line-height:1.65}
+a{color:inherit;text-decoration:none}.c{width:min(1120px,92vw);margin-inline:auto}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(6,10,19,.75);border-bottom:1px solid var(--stroke)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}.brand{display:flex;gap:.6rem;align-items:center;font-weight:800}.logo{width:36px;height:36px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:20px}.brand small{display:block;font-weight:400;font-size:11px;color:var(--dim);letter-spacing:2px}.links{display:flex;gap:1.4rem;color:var(--dim);font-size:14px}.links a:hover{color:#fff}.cta{padding:.55rem 1.1rem;border-radius:999px;background:var(--grad);font-weight:600;font-size:14px}@media(max-width:800px){.links{display:none}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;padding:4rem 0 3rem;align-items:center}@media(max-width:900px){.hero{grid-template-columns:1fr}}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;font-weight:800}.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--dim);margin:1rem 0 1.6rem;font-size:1.05rem}.btns{display:flex;gap:.8rem;flex-wrap:wrap}.btn{padding:.8rem 1.5rem;border-radius:14px;font-weight:600;border:1px solid var(--stroke);background:var(--card)}.btn.pri{background:var(--grad);border:none}.note{font-size:13px;color:var(--dim);margin-top:1rem}
+.flow{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);padding:1.4rem}.node{display:flex;gap:.7rem;align-items:center;background:rgba(255,255,255,.05);border:1px solid var(--stroke);border-radius:12px;padding:.6rem .9rem;margin:.45rem 0;font-size:14px}.node b{color:#fff}.arrow{text-align:center;color:var(--dim);font-size:13px}.dot{width:10px;height:10px;border-radius:50%;background:#10b981;box-shadow:0 0 12px #10b981;animation:blink 1.4s infinite}@keyframes blink{50%{opacity:.35}}
+section{padding:2.6rem 0}h2{font-size:1.6rem;margin-bottom:.4rem}h2+p{color:var(--dim);margin-bottom:1.4rem}
+.grid{display:grid;gap:1rem}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.g6{grid-template-columns:repeat(3,1fr)}@media(max-width:900px){.g4,.g3,.g2,.g6{grid-template-columns:1fr 1fr}}@media(max-width:560px){.g4,.g3,.g2,.g6{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);padding:1.3rem}.card h3{font-size:1.02rem;margin-bottom:.4rem}.card p{color:var(--dim);font-size:.92rem}.tag{display:inline-block;font-size:11px;letter-spacing:1px;color:var(--dim);border:1px solid var(--stroke);border-radius:999px;padding:.15rem .7rem;margin-bottom:.7rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);padding:1.3rem}.step .n{font-size:12px;color:var(--dim);letter-spacing:2px}.step h3{margin:.3rem 0}.step code{font-size:12px;color:#a5b4fc}
+.demo{background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(168,85,247,.12));border:1px solid var(--stroke);border-radius:var(--r);padding:1.5rem;margin-top:1rem}.lamp{font-size:44px;filter:grayscale(1);transition:.3s}.lamp.on{filter:none;text-shadow:0 0 30px #fbbf24}.log{font-family:monospace;font-size:12.5px;background:#020617;border:1px solid var(--stroke);border-radius:12px;padding:.9rem;min-height:110px;color:#a5b4fc;white-space:pre-wrap;margin-top:.8rem}
+.eco{display:flex;gap:.7rem;flex-wrap:wrap}.eco a{background:var(--card);border:1px solid var(--stroke);border-radius:999px;padding:.55rem 1.1rem;font-size:14px}.eco a:hover{border-color:#6366f1}
+footer{border-top:1px solid var(--stroke);padding:2rem 0 3rem;color:var(--dim);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="c nav">
+<div class="brand"><div class="logo">n</div><div>nithep<small>SMART LEGACY PLATFORM</small></div></div>
+<nav class="links"><a href="#problem">ปัญหา</a><a href="#how">วิธีทำ</a><a href="#proof">ตัวอย่างจริง</a><a href="#cap">ความสามารถ</a><a href="#eco">Ecosystem</a></nav>
+<a class="cta" href="#contact">คุย 15 นาที</a>
+</div></header>
+
+<div class="c hero">
+<div>
+<h1>ทำให้ระบบเก่า<br><span class="grad">ฉลาดขึ้น</span></h1>
+<p class="sub">เชื่อม Legacy Hardware · Software · IoT แล้วต่อยอดเป็นระบบที่<strong style="color:#fff">วิเคราะห์ คาดการณ์ ควบคุมได้แบบเรียลไทม์</strong> — บน Raspberry Pi 4 + Cloud ชุดเดียวกับที่ใช้ในโรงพยาบาลจริง<br><span style="font-size:.9rem">Bridge the Past. Power the Future.</span></p>
+<div class="btns"><a class="btn pri" href="https://snc.nithep.com">ดู SNC ตัวจริง</a><a class="btn" href="#proof">Check-in → เปิดไฟผ่าน PBX</a></div>
+<p class="note">จากตู้สาขาโทรศัพท์อายุ 20 ปี → ระบบ Nurse Call ทันสมัย (FHIR Ready) · ไม่ต้องรื้อของเดิมทิ้ง</p>
+</div>
+<div class="flow">
+<div class="tag">LIVE FLOW — SMART LEGACY</div>
+<div class="node"><span class="dot"></span><span><b>Phonik PBX / ECS-103R</b><br><span style="color:var(--dim)">SMDR :23 · CCH2 · ปุ่มฉุกเฉิน NCX</span></span></div>
+<div class="arrow">▼ Pi Listener / Adapter</div>
+<div class="node">📟 <span><b>Raspberry Pi 4 Edge</b><br><span style="color:var(--dim)">snc_pbx_listener → FHIR Event + Outbox</span></span></div>
+<div class="arrow">▼ WebSocket / HTTPS + API Key</div>
+<div class="node">☁️ <span><b>GCP Cloud Run + Firestore</b><br><span style="color:var(--dim)">API · SLA · Telegram · Secret Manager</span></span></div>
+<div class="arrow">▼</div>
+<div class="node">📱 <span><b>Dashboard + มือถือ (LINE LIFF)</b><br><span style="color:var(--dim)">พยาบาลเห็นแดงกะพริบ · แขกกดเปิดไฟเอง</span></span></div>
+</div>
+</div>
+
+<div class="c"><section id="problem">
+<h2>ระบบเก่าไม่ได้แย่ — แค่ยังไม่ถูกปลดล็อก</h2>
+<p>เราไม่ทิ้งของเก่า เราทำให้ของเก่าทำงานร่วมกับโลกใหม่ได้</p>
+<div class="grid g4">
+<div class="card"><div class="tag">PBX</div><h3>ตู้สาขา + Call Station เก่า</h3><p>Phonik DX / ECS-103R ยังดีอยู่ แต่คุยกับใครไม่รู้เรื่อง</p></div>
+<div class="card"><div class="tag">SOFTWARE</div><h3>ซอฟต์แวร์ปิดตาย</h3><p>Room Manager บน PC เครื่องเดียว พังคือจบ ไม่มี API</p></div>
+<div class="card"><div class="tag">IOT</div><h3>อุปกรณ์ไม่มี API</h3><p>รีเลย์ 220V / เซ็นเซอร์ / คีย์การ์ด ต่อเน็ตไม่ได้โดยตรง</p></div>
+<div class="card"><div class="tag">DATA</div><h3>ข้อมูลกระจัดกระจาย</h3><p>Event อยู่หน้างาน วิเคราะห์ย้อนหลัง + คาดการณ์ไม่ได้</p></div>
+</div></section>
+
+<section id="how">
+<h2>Smart Legacy Approach</h2>
+<p>สูตร 4 ขั้นที่ใช้กับ SNC แล้ว กำลังลอกไป SHC</p>
+<div class="steps">
+<div class="step"><div class="n">01 DISCOVER</div><h3>วิเคราะห์ของเดิม</h3><p style="color:var(--dim);font-size:.9rem">ดูรุ่นตู้ โปรโตคอล SMDR/CCH2 สายไฟ ผังห้อง</p><code>PBX DX-32C · ECS-103R V.5</code></div>
+<div class="step"><div class="n">02 BRIDGE</div><h3>สร้างสะพาน</h3><p style="color:var(--dim);font-size:.9rem">Listener + Adapter บน Pi แปลงสัญญาณดิบเป็น Event</p><code>snc_pbx_listener · PBXProtocolHandler</code></div>
+<div class="step"><div class="n">03 MODERNIZE</div><h3>ทันสมัย</h3><p style="color:var(--dim);font-size:.9rem">FHIR JSON + WebSocket + LINE LIFF + Dashboard</p><code>FastAPI :8000 · SQLite WAL → Firestore</code></div>
+<div class="step"><div class="n">04 INTELLIGENCE</div><h3>ฉลาด + คาดการณ์</h3><p style="color:var(--dim);font-size:.9rem">SLA / Response Time / Alert / Automation</p><code>Telegram bridge · Monitoring · AI summary</code></div>
+</div></section>
+
+<section id="proof">
+<h2>ตัวอย่างจริง จับต้องได้</h2>
+<p>ไม่ใช่สไลด์ — รันอยู่บน Pi 4 + Cloud จริง</p>
+<div class="grid g2">
+<div class="card"><div class="tag">CASE 01 — DONE</div><h3>🔔 Smart Nurse Call (SNC)</h3><p>ปุ่มฉุกเฉิน → PBX พ่น SMDR → Pi แปลง FHIR → Dashboard แดงกะพริบ + เสียง + จับเวลา → พยาบาลกด Ack</p><p style="margin-top:.7rem"><a class="btn pri" style="display:inline-block" href="https://snc.nithep.com">เปิด snc.nithep.com</a> <a class="btn" style="display:inline-block" href="https://snc.nithep.com/docs">/docs</a></p></div>
+<div class="card"><div class="tag">CASE 02 — POC → PILOT</div><h3>🏨 Check-in แล้วใช้มือถือเปิดไฟผ่าน PBX</h3><p>สแกน QR → LINE LIFF Check-in → Cloud สั่ง Pi → CCH2 ON → เสียบคีย์การ์ดไฟติด → สั่งเปิด/ปิดแอร์จากมือถือ ไม่ต้องเปลี่ยนตู้เดิม</p><p style="margin-top:.7rem"><a class="btn" style="display:inline-block" href="https://shc.nithep.com">เปิด shc.nithep.com</a></p></div>
+</div>
+<div class="demo">
+<h3>▶ ลองกดเล่น: จำลอง Check-in → เปิดไฟ (คอนเซปต์เดียวกับของจริง)</h3>
+<p style="color:var(--dim);font-size:.9rem">ลำดับจริง: QR → LIFF → Cloud API → Pi → PBX CCH2 → ECS-103R จ่ายไฟ</p>
+<div style="display:flex;gap:.7rem;margin-top:.9rem;flex-wrap:wrap;align-items:center">
+<button class="btn pri" onclick="step('checkin')">1. Check-in</button>
+<button class="btn" onclick="step('on')" id="bOn" disabled>2. เปิดไฟจากมือถือ</button>
+<button class="btn" onclick="step('off')" id="bOff" disabled>3. Check-out / ตัดไฟ</button>
+<div class="lamp" id="lamp">💡</div><span id="st" style="font-size:14px;color:var(--dim)">ห้อง 204 — ไฟดับ (รอ Check-in)</span>
+</div>
+<div class="log" id="log">[ready] Pi edge online · PBX CCH2 link OK · Cloud Run OK</div>
+</div>
+<script>
+const log=document.getElementById('log'),lamp=document.getElementById('lamp'),st=document.getElementById('st');
+function add(m){log.textContent+='\n'+m;log.scrollTop=1e6}
+function step(s){
+if(s==='checkin'){add('[LIFF] guest scan QR-204 → POST /api/checkin → Cloud → Pi → PBX: ALLOW KEYCARD');st.textContent='ห้อง 204 — Check-in แล้ว เสียบคีย์การ์ดได้';document.getElementById('bOn').disabled=false;add('[PBX CCH2] keycard armed · รอคำสั่ง ON จากมือถือ')}
+if(s==='on'){lamp.classList.add('on');st.textContent='ห้อง 204 — ไฟติดแล้ว (สั่งจากมือถือผ่าน PBX)';document.getElementById('bOff').disabled=false;add('[APP] tap เปิดไฟ → Cloud → Pi → PBX CCH2 ON → ECS-103R จ่ายไฟ 220V');add('[EVENT] room-204 POWER_ON {fhir:true, idempotency:event_id}')}
+if(s==='off'){lamp.classList.remove('on');st.textContent='ห้อง 204 — Check-out แล้ว ตัดไฟทันที';add('[APP] checkout → PBX CCH2 OFF → ตัดไฟแม้เสียบการ์ดคาไว้ · SLA + log → Firestore')}}
+</script>
+</div></section>
+
+<section id="cap">
+<h2>เราช่วยอะไรได้บ้าง</h2>
+<p>ขายความสามารถ ไม่ขายฝัน</p>
+<div class="grid g6">
+<div class="card"><h3>🔌 Edge Listener & Bridge</h3><p>SMDR Telnet / CCH2 / Serial → Event มาตรฐาน</p></div>
+<div class="card"><h3>⚡ Real-time Event</h3><p>WebSocket + Outbox + Idempotency กันหาย/ซ้ำ</p></div>
+<div class="card"><h3>📱 Mobile via PBX</h3><p>LINE LIFF สั่งไฟ/แอร์ผ่านตู้เดิม</p></div>
+<div class="card"><h3>📊 Analyze & Predict</h3><p>SLA / Response Time / รายงานผู้บริหาร + AI</p></div>
+<div class="card"><h3>🏥 Standard Data</h3><p>FHIR Ready ตั้งแต่ Day 1 พร้อมขึ้น Healthcare API</p></div>
+<div class="card"><h3>🛡️ Remote & Self-heal</h3><p>systemd + watchdog + tunnel-self-heal + backup</p></div>
+</div></section>
+
+<section id="eco">
+<h2>Ecosystem</h2>
+<p>บุ๊กมาร์กเดียวพอ ที่เหลือเชื่อมถึงกันหมด</p>
+<div class="eco"><a href="https://snc.nithep.com">🏥 snc.nithep.com — Nurse Call</a><a href="https://shc.nithep.com">🏨 shc.nithep.com — Hotel</a><a href="https://shop.nithep.com">🛒 shop.nithep.com — T.C.Com</a><a href="https://docs.nithep.com">📚 docs.nithep.com</a><a href="https://admin.nithep.com">🔧 admin.nithep.com</a></div>
+</section>
+
+<section id="contact">
+<div class="card" style="text-align:center;padding:2.5rem 1.5rem;background:linear-gradient(135deg,rgba(59,130,246,.14),rgba(168,85,247,.14))">
+<h2>มีระบบเก่าอยากทำให้ฉลาดขึ้นไหม?</h2>
+<p>ส่งรูปตู้ + รุ่น + ปัญหามา นัดคุย 15 นาที ไม่ขายของ เน้นหาทางที่เป็นไปได้</p>
+<div class="btns" style="justify-content:center;margin-top:1.2rem"><a class="btn pri" href="mailto:contact@nithep.com">ส่งรายละเอียดมา</a><a class="btn" href="tel:+66819508950">โทร 081-950-8950</a><a class="btn" href="https://snc.nithep.com">ดูงานจริงก่อน</a></div>
+<p class="note">nithep · 47 หมู่ 6 ต.ป่าสัก อ.เชียงแสน จ.เชียงราย 57150 · LINE / Email / โทร</p>
+</div>
+</section></div>
+<footer><div class="c" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem"><span>© 2026 nithep — Smart Legacy Platform · Bridge the Past. Power the Future.</span><span>Pi 4 Edge + GCP Cloud Run + Cloudflare Tunnel</span></div></footer>
+</body>
+</html>

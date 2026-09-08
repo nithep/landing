@@ -1,0 +1,3 @@
+# nithep.com — redirect rules (Cloudflare Pages)
+# www -> apex
+https://www.nithep.com/* https://nithep.com/:splat 301
