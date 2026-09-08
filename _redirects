@@ -1,3 +1,5 @@
-# nithep.com — redirect rules (Cloudflare Pages)
-# www -> apex
-https://www.nithep.com/* https://nithep.com/:splat 301
+# nithep.com — redirect rules (Cloudflare Workers/Pages)
+# NOTE: ที่นี่ใช้ได้เฉพาะ relative URL เท่านั้น (absolute https://... จะ build ล้ม)
+# www -> apex ไปทำที่ Dashboard: Pages > landing > Custom domains + Rules > Redirect Rules
+# ตัวอย่าง rule แบบ relative (ถ้าต้องใช้ในอนาคต):
+# /old /new 301
