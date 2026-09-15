@@ -8,17 +8,17 @@ Static self-contained landing หน้าแรก `nithep.com` โทนเด
 |---|---|
 | `index.html` | Landing หลัก (Hero Smart Legacy + เดโม Check-in→เปิดไฟ) |
 | `404.html` | หน้า 404 |
-| `_headers` | Security + Cache headers |
-| `_redirects` | `www → apex` 301 |
+| `_headers` | Security + Cache headers (คอมเมนต์ต้องขึ้นต้นด้วย `#`) |
+| `_redirects` | กฎ redirect (relative-only — `www → apex` ตั้งที่ Cloudflare Dashboard) |
 
 ## Preview local
 
 ดับเบิลคลิก `index.html` หรือรัน static server:
 
 ```bash
-npx serve D:\nithep.com
+npx serve "D:\nithep-platform\landing"
 # หรือ
-python -m http.server 8080 --directory D:\nithep.com
+python -m http.server 8080 --directory "D:\nithep-platform\landing"
 ```
 
 ## Deploy → Cloudflare Pages
