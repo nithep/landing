@@ -1,0 +1,33 @@
+name: validate-landing
+
+# ตรวจ static site ก่อน deploy — Cloudflare Pages deploy จาก root ตรง ๆ (ไม่มี build step)
+# การันตีว่า _redirects/_headers ยังถูกรูปแบบ และ anchor/ลิงก์ภายในไม่ตาย
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-site:
+    name: Static site checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run static site check
+        shell: bash
+        run: |
+          set -uo pipefail
+          echo "🔍 ตรวจ _redirects / _headers / anchor + ลิงก์ภายใน..."
+          python3 scripts/check_static_site.py --quiet
+          echo "✅ Landing พร้อม deploy"
