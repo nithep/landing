@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>นิเทพ เชิญสวัสดิ์ · nithep.com/me</title>
+<meta name="description" content="นามบัตรดิจิทัลของนิเทพ เชิญสวัสดิ์ ผู้จัดการ ที.ซี.คอม — ระบบสื่อสาร ระบบความปลอดภัย และระบบอัจฉริยะในอาคาร">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nithep.com/me">
+<meta property="og:title" content="นิเทพ เชิญสวัสดิ์ · nithep.com">
+<meta property="og:description" content="ระบบสื่อสาร · ระบบความปลอดภัย · ระบบอัจฉริยะในอาคาร — ติดต่อ โทร อีเมล หรือเพิ่มเพื่อน LINE ได้ในแตะเดียว">
+<meta property="og:image" content="https://nithep.com/me/og-image.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:"Sarabun","Noto Sans Thai",system-ui,sans-serif; background:#f4f1ea; color:#21303e; padding:24px 14px 40px; }
@@ -13,7 +22,7 @@
   h1 { font-size:27px; margin-top:16px; letter-spacing:.2px; }
   .en { font-size:16px; color:#5c6f80; margin-top:2px; }
   .role { margin-top:10px; font-size:15px; color:#33506b; font-weight:600; }
-  .tag { margin:14px 20px 0; font-size:14.5px; line-height:1.65; color:#44586a; }
+  .tag { white-space:pre-line; margin:14px 20px 0; font-size:14.5px; line-height:1.65; color:#44586a; }
   .btns { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:20px 22px 4px; }
   .btn { display:flex; align-items:center; justify-content:center; gap:8px; padding:13px 6px; border-radius:12px; text-decoration:none; font-weight:700; font-size:15.5px; color:#fff; background:#33506b; }
   .btn small { font-weight:400; font-size:12.5px; opacity:.85; }
@@ -44,7 +53,7 @@
     <h1>นิเทพ เชิญสวัสดิ์</h1>
     <div class="en">Nithep Choensawat</div>
     <div class="role">ผู้จัดการ ที.ซี.คอม · ผู้สร้าง nithep.com</div>
-    <p class="tag">ทำระบบสื่อสาร ระบบความปลอดภัย และระบบอัจฉริยะในอาคาร<br>ให้ร้านและองค์กรขนาดเล็กใช้ของดีได้จริง</p>
+    <p class="tag" id="f-tag">ทำระบบสื่อสาร ระบบความปลอดภัย และระบบอัจฉริยะในอาคาร<br>ให้ร้านและองค์กรขนาดเล็กใช้ของดีได้จริง</p>
   </div>
   <div class="btns">
     <a class="btn" href="tel:+66819508950">โทร <small>081 950 8950</small></a>
@@ -52,29 +61,30 @@
     <a class="btn line" href="https://line.me/ti/p/~nithep9999">LINE <small>nithep9999</small></a>
     <a class="btn ghost" href="nithep.vcf" download="nithep.vcf">บันทึกเบอร์</a>
   </div>
+  <div class="event" id="eventBox" hidden></div>
   <div class="doors">
     <h2>งานที่ทำ</h2>
     <a class="door" href="https://nithep.com/">
-      <h3>ระบบสื่อสารสำหรับองค์กร</h3>
-      <p>ระบบตู้สาขาโทรศัพท์และระบบสื่อสารภายใน สำหรับโรงพยาบาล โรงแรม และองค์กรหลายสาขา วางระบบแบบขายเป็นระบบครบ ไม่ใช่ขายเครื่องเปล่า</p>
+      <h3 id="f-door1-t">ระบบสื่อสารสำหรับองค์กร</h3>
+      <p id="f-door1-p">ระบบตู้สาขาโทรศัพท์และระบบสื่อสารภายใน สำหรับโรงพยาบาล โรงแรม และองค์กรหลายสาขา วางระบบแบบขายเป็นระบบครบ ไม่ใช่ขายเครื่องเปล่า</p>
     </a>
     <a class="door" href="https://nithep.com/">
-      <h3>ระบบความปลอดภัยและเครือข่าย</h3>
-      <p>กล้องวงจรปิด ระบบเครือข่าย และระบบแจ้งเหตุเพลิงไหม้ สำหรับอาคารและองค์กร จัดงานตามระบบงาน ไม่จัดตามยี่ห้อสินค้า</p>
+      <h3 id="f-door2-t">ระบบความปลอดภัยและเครือข่าย</h3>
+      <p id="f-door2-p">กล้องวงจรปิด ระบบเครือข่าย และระบบแจ้งเหตุเพลิงไหม้ สำหรับอาคารและองค์กร จัดงานตามระบบงาน ไม่จัดตามยี่ห้อสินค้า</p>
     </a>
     <a class="door" href="https://nithep.com/">
-      <h3>ระบบห้องพักที่ดูแลโดยไม่ใช้กล้อง</h3>
-      <p>ระบบตรวจจับเหตุการณ์อัจฉริยะ (SES) และระบบเช็กอินอัจฉริยะ (SHC) ที่ทำงานด้วยเซนเซอร์ตรวจการมีอยู่ ไม่บันทึกภาพใบหน้า ข้อมูลเป็นของผู้ใช้อาคารเอง</p>
-      <span class="status">อยู่ระหว่างพัฒนาและทดสอบในห้องทดลอง ยังไม่เปิดขาย</span>
+      <h3 id="f-door3-t">ระบบห้องพักที่ดูแลโดยไม่ใช้กล้อง</h3>
+      <p id="f-door3-p">ระบบตรวจจับเหตุการณ์อัจฉริยะ (SES) และระบบเช็กอินอัจฉริยะ (SHC) ที่ทำงานด้วยเซนเซอร์ตรวจการมีอยู่ ไม่บันทึกภาพใบหน้า ข้อมูลเป็นของผู้ใช้อาคารเอง</p>
+      <span class="status" id="f-door3-s">อยู่ระหว่างพัฒนาและทดสอบในห้องทดลอง ยังไม่เปิดขาย</span>
     </a>
-    <p class="energy">กำลังศึกษาระบบพลังงานแสงอาทิตย์และระบบกักเก็บพลังงาน เพื่อต่อยอดเป็นอีกชั้นของงานระบบในอาคาร — ขณะนี้อยู่ในขั้นศึกษา ยังไม่ใช่งานขาย</p>
+    <p class="energy" id="f-energy">กำลังศึกษาระบบพลังงานแสงอาทิตย์และระบบกักเก็บพลังงาน เพื่อต่อยอดเป็นอีกชั้นของงานระบบในอาคาร — ขณะนี้อยู่ในขั้นศึกษา ยังไม่ใช่งานขาย</p>
   </div>
   <div class="democ">
     <a href="https://nithep.com/democ-ai/second-brain/">
-      <h3>democ.ai — ทำให้ปัญญาประดิษฐ์เข้าถึงทุกคน</h3>
-      <p class="fb">democ.ai ย่อมาจาก democratize AI</p>
-      <p>บันทึกการเรียนรู้และวิธีคิดเบื้องหลังงานทั้งหมดของฉัน รวมเรื่อง “สมองที่สองของคนขี้ลืม” — ระบบช่วยจำส่วนบุคคลที่ข้อมูลเป็นของเจ้าของ</p>
-      <p class="fb">ติดตามบันทึกการเรียนรู้ประจำวันได้ที่เพจเฟซบุ๊ก Mnemo · 2ndbrain</p>
+      <h3 id="f-democ-t">democ.ai — ทำให้ปัญญาประดิษฐ์เข้าถึงทุกคน</h3>
+      <p class="fb" id="f-democ-origin">democ.ai ย่อมาจาก democratize AI</p>
+      <p id="f-democ-p">บันทึกการเรียนรู้และวิธีคิดเบื้องหลังงานทั้งหมดของฉัน รวมเรื่อง “สมองที่สองของคนขี้ลืม” — ระบบช่วยจำส่วนบุคคลที่ข้อมูลเป็นของเจ้าของ</p>
+      <p class="fb" id="f-democ-fb">ติดตามบันทึกการเรียนรู้ประจำวันได้ที่เพจเฟซบุ๊ก Mnemo · 2ndbrain</p>
     </a>
   </div>
   <footer>
@@ -83,5 +93,30 @@
     <div class="url">nithep.com/me</div>
   </footer>
 </div>
+<script src="card-data.js"></script>
+<script>
+(function(){
+  var d = window.CARD_DATA; if(!d) return;
+  function set(id, txt){ var el = document.getElementById(id); if(el && typeof txt === 'string') el.textContent = txt; }
+  set('f-tag', d.tagline);
+  if(d.doors){
+    set('f-door1-t', d.doors[0].title); set('f-door1-p', d.doors[0].text);
+    set('f-door2-t', d.doors[1].title); set('f-door2-p', d.doors[1].text);
+    set('f-door3-t', d.doors[2].title); set('f-door3-p', d.doors[2].text);
+    set('f-door3-s', d.doors[2].status);
+  }
+  set('f-energy', d.energy);
+  if(d.democ){
+    set('f-democ-t', d.democ.title); set('f-democ-origin', d.democ.origin);
+    set('f-democ-p', d.democ.text); set('f-democ-fb', d.democ.follow);
+  }
+  var ev = d.event, box = document.getElementById('eventBox');
+  if(ev && box && ev.text && ev.start && ev.end){
+    var now = new Date();
+    var s = new Date(ev.start + 'T00:00:00+07:00'), e = new Date(ev.end + 'T23:59:59+07:00');
+    if(now >= s && now <= e){ box.textContent = ev.text; box.hidden = false; }
+  }
+})();
+</script>
 </body>
 </html>
