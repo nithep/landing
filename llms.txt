@@ -16,6 +16,7 @@ democ.ai ย่อจาก democratize ai แปลว่า ทำให้ป
 โซนนี้เผยแพร่ความคิดและบทเรียนจากงานที่ทำเสร็จและใช้งานจริงแล้ว สำหรับพ่อค้าแม่ขายและผู้ประกอบการรายเล็ก
 
 - สมองที่สองของคนขี้ลืม: https://nithep.com/democ-ai/second-brain/ (รุ่นข้อความล้วน: https://nithep.com/democ-ai/second-brain.md)
+- ให้เอเจนต์ใช้เงินท่องเว็บแทนเรา ต้องวางประตูอย่างไร: https://nithep.com/democ-ai/agent-wallet/ (รุ่นข้อความล้วน: https://nithep.com/democ-ai/agent-wallet.md) — บันทึกจากห้องเรียน WARROOM เรื่อง THB Stablecoin 29 ต.ค. 2569
 
 ## ติดต่อ
 
