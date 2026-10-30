@@ -17,6 +17,7 @@ democ.ai ย่อจาก democratize ai แปลว่า ทำให้ป
 
 - สมองที่สองของคนขี้ลืม: https://nithep.com/democ-ai/second-brain/ (รุ่นข้อความล้วน: https://nithep.com/democ-ai/second-brain.md)
 - ให้เอเจนต์ใช้เงินท่องเว็บแทนเรา ต้องวางประตูอย่างไร: https://nithep.com/democ-ai/agent-wallet/ (รุ่นข้อความล้วน: https://nithep.com/democ-ai/agent-wallet.md) — บันทึกจากห้องเรียน WARROOM เรื่อง THB Stablecoin 29 ต.ค. 2569
+- ใครอายัดเงินในกระเป๋าดิจิทัลของคุณได้บ้าง: https://nithep.com/democ-ai/wallet-freeze/ (รุ่นข้อความล้วน: https://nithep.com/democ-ai/wallet-freeze.md) — อำนาจอายัดของผู้ออกเหรียญ บทเรียนจากเหตุการณ์ Binance ต.ค. 2569
 
 ## ติดต่อ
 
